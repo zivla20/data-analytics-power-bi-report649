@@ -13,10 +13,10 @@ This project involves creating a comprehensive **Quarterly Business Report** for
 
 ## Installation
 
-1. Copy the repository link.
+1. *Copy the repository link.*
   - On the main page of the GitHub Repo, click the green button "<> Code".
   - Copy the HTTPS URL that is shown.
-2. Clone the repository on your local machine.
+2. *Clone the repository on your local machine.*
   - Open your bash CLI.
   - Navigate to the location you wish to clone to the repository to.
   - In the Terminal, type in the following bash command:
@@ -24,9 +24,21 @@ This project involves creating a comprehensive **Quarterly Business Report** for
   git clone https://github.com/zivla20/data-analytics-power-bi-report649.git
 ```
   - Press the Enter key.
-  - You will now be able to open the repo files on your local machine.
+  - You will now be able to open the repository files on your local machine.
 
 ## Usage
+
+1. To open the project, ensure that the repository has been cloned successfully and is present in your local machine.
+2. The power_bi_project.pbix file contains the PowerBI report. Open this file to view the following 4 report pages:
+  * *Executive Summary* Page
+      - Provides a high-level overview of key business metrics.
+  * *Customer Detail* Page
+      - Offers detailed insights into customer behavior and performance.
+  * *Product Detail* Page
+      - Gives insight into product performance, showcasing metrics and visualizations on product sales, categories, and profitability.
+  * *Stores Map* Page
+      - Maps out store locations, with tooltips and drill-downs offering detailed insights on individual store metrics.
+3. To access the SQL and CSV answers for each question mentioned in Milestone 10, the sql_question_answers folder should be opened, and the relevant .sql and .csv file loaded. 
 
 ## File Structure
 
