@@ -3,7 +3,10 @@
 
 ## Project Overview:
 
-This project involves creating a comprehensive **Quarterly Business Report** for a medium-sized international retailer using **Microsoft Power BI**. The goal is to provide actionable insights by transforming raw data into a visually appealing and insightful report, enabling better decision-making for C-suite executives and other stakeholders. The project includes extracting, cleaning, and modeling data from disparate sources, building a robust **star-schema data model**, and designing a multi-page report that focuses on high-level business summaries, customer segmentation, product performance, and store metrics. To finish off, we extracted insights from the data using SQL Queries on a PostgreSQL database, for clients who may not have access to the PowerBI report.
+This project involves creating a comprehensive **Quarterly Business Report** for a medium-sized international retailer using **Microsoft Power BI**. 
+The goal is to provide actionable insights by transforming raw data into a visually appealing and insightful report, enabling better decision-making for C-suite executives and other stakeholders. 
+The project includes extracting, cleaning, and modeling data from disparate sources, building a robust **star-schema data model**, and designing a multi-page report that focuses on high-level business summaries, customer segmentation, product performance, and store metrics. 
+To ensure accessibility for clients without Power BI access, we also extracted insights from the data using SQL queries on a PostgreSQL database
 
 ## Table of Contents:
 - [Installation](#installation)
