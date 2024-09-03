@@ -36,17 +36,38 @@ To ensure accessibility for clients without Power BI access, we also extracted i
 
 1. To open the project, ensure that the repository has been cloned successfully and is present in your local machine.
 2. The *power_bi_project.pbix* file contains the PowerBI report. Open this file to view the following 4 report pages:
-  * **Executive Summary** Page
+  * **Executive Summary**
       - Provides a high-level overview of key business metrics.
-  * **Customer Detail** Page
+  * **Customer Detail**
       - Offers detailed insights into customer behavior and performance.
-  * **Product Detail** Page
+  * **Product Detail**
       - Gives insight into product performance, showcasing metrics and visualizations on product sales, categories, and profitability.
-  * **Stores Map** Page
+  * **Stores Map**
       - Maps out store locations, with tooltips and drill-downs offering detailed insights on individual store metrics.
 3. To access the SQL and CSV answers for each question mentioned in Milestone 10, the *sql_question_answers* folder should be opened, and the relevant .sql and/or .csv file loaded. 
 
 ## File Structure
+
+```
+├── power_bi_project.pbix
+├── sql_question_answers
+│ ├── question_1.csv
+│ ├── question_1.sql
+│ ├── question_2.csv
+│ ├── question_2.sql
+│ ├── question_3.csv
+│ ├── question_3.sql
+│ ├── question_4.csv
+│ ├── question_4.sql
+│ ├── question_5.csv
+│ ├── question_5.sql
+│ ├── column_names
+  │ ├── dim_products_columns.csv
+  │ ├── dim_stores_columns.csv
+  │ ├── dim_users_columns.csv
+  │ ├── orders_powerbi_columns.csv
+
+```
 
 ## Project Documentation
 
