@@ -14,8 +14,8 @@ To ensure accessibility for clients without Power BI access, we also extracted i
 ## Table of Contents:
 - [Installation](#installation)
 - [Usage](#usage)
-- [File Structure] (#file structure)
-- [Project Documentation] (#project documentation)
+- [File Structure] (#file-structure)
+- [Project Documentation] (#project-documentation)
 
 ## Installation
 
