@@ -49,8 +49,8 @@ To ensure accessibility for clients without Power BI access, we also extracted i
 ## File Structure
 
 ```
-├── power_bi_project.pbix
-├── sql_question_answers
+├── power_bi_project.pbix # Power BI project report
+├── sql_question_answers # Folder containing .sql and .csv files of insights - Milestone 10
 │ ├── question_1.csv
 │ ├── question_1.sql
 │ ├── question_2.csv
@@ -61,11 +61,11 @@ To ensure accessibility for clients without Power BI access, we also extracted i
 │ ├── question_4.sql
 │ ├── question_5.csv
 │ ├── question_5.sql
-│ ├── column_names
-  │ ├── dim_products_columns.csv
-  │ ├── dim_stores_columns.csv
-  │ ├── dim_users_columns.csv
-  │ ├── orders_powerbi_columns.csv
+│ ├── column_names # Folder containing the names of the columns in the PostgreSQL database tables
+  │ ├── dim_products_columns.csv # Names of columns in the Products Table
+  │ ├── dim_stores_columns.csv # Names of columns in the Stores Table
+  │ ├── dim_users_columns.csv # Names of columns in the Customers Table
+  │ ├── orders_powerbi_columns.csv # Names of columns in the Orders Table
 
 ```
 
