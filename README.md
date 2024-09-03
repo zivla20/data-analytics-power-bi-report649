@@ -48,7 +48,7 @@ To ensure accessibility for clients without Power BI access, we also extracted i
 
 ## File Structure
 
-```
+```bash
 ├── power_bi_project.pbix # Power BI project report
 ├── sql_question_answers # Folder containing .sql and .csv files of insights - Milestone 10
 │ ├── question_1.csv
