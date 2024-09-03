@@ -20,9 +20,9 @@ This project involves creating a comprehensive **Quarterly Business Report** for
   - Open your bash CLI.
   - Navigate to the location you wish to clone to the repository to.
   - In the Terminal, type in the following bash command:
-    ```
+```
   git clone https://github.com/zivla20/data-analytics-power-bi-report649.git
-  ```
+```
   - Press the Enter key.
   - You will now be able to open the repo files on your local machine.
 
