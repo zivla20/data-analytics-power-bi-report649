@@ -26,7 +26,7 @@ To ensure accessibility for clients without Power BI access, we also extracted i
   - Open your bash CLI.
   - Navigate to the location you wish to clone to the repository to.
   - In the Terminal, type in the following bash command:
-```
+```bash
   git clone https://github.com/zivla20/data-analytics-power-bi-report649.git
 ```
   - Press the Enter key.
