@@ -71,3 +71,22 @@ To ensure accessibility for clients without Power BI access, we also extracted i
 
 ## Project Documentation
 
+This project was broken down into Milestones by the AI Core Team. A detailed look at the most important tasks in each milestone will follow:
+
+### Milestone 2
+
+The .pbix file was created in Milestone 1. 4 tables were then connected to:
+
+1. "Orders" fact table imported from an Azure SQL database:
+    - The [Card Number] column was deleted to ensure confidentiality
+    - The date columns were spilt into their respective time and date components
+    - Rows with missing values were removed from the [Order Date] columnn
+    - Columns were renamed using the snakecase format
+2. "Product" dimension table from a .csv file:
+    - Duplicates were removed from the [Product Code] column
+    - Columns were renamed using the snakecase format
+3. "Stores" dimension table from Azure Blob Storage:
+    - Columns were renamed using the snakecase format
+4. "Customers" dimension table by combining 3 .csv files:
+    - A [Full Name] column was created by combining together the [First Name] and [Last Name] columns.
+    - Columns were renamed using the snakecase format
