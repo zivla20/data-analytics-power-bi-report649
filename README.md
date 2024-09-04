@@ -109,11 +109,12 @@ The file was then connected to 4 tables:
   8. Start of Month
   9. Start of Week
      
-  Some examples of the DAX formulas used:
-  DayOfWeek = WEEKDAY('Date'[Date], 2)
-  MonthName = FORMAT('Date'[Date], "MMMM")
-  Start of Week = 'Date'[Date] - WEEKDAY('Date'[Date], 2) + 1
-  Year = YEAR('Date'[Date])
+  Some examples of the DAX formulas used include:
+  
+  - DayOfWeek = WEEKDAY('Date'[Date], 2)
+  - MonthName = FORMAT('Date'[Date], "MMMM")
+  - Start of Week = 'Date'[Date] - WEEKDAY('Date'[Date], 2) + 1
+  - Year = YEAR('Date'[Date])
 
   A date hierarchy was then made, from the Start of Year down to the Date.
 
@@ -149,7 +150,12 @@ The file was then connected to 4 tables:
     "DE", "Germany",
     BLANK())
    
- * Finally, a Geography hierarchy was created in the 'Stores' table with the following structure: Region --> Country --> Country Region
+ * Finally, a Geography hierarchy was created in the 'Stores' table with the following structure: Region --> Country --> Country Region.
+
+Here is a screenshot of the data model that has been created.
+
+![image](https://github.com/user-attachments/assets/0ef9b8f8-3b8e-4036-bbcd-20b3043bab53)
+
 
 
   
