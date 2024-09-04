@@ -75,7 +75,9 @@ This project was broken down into Milestones by the AI Core Team. A detailed loo
 
 ### Milestone 2
 
-The .pbix file was created in Milestone 1. 4 tables were then connected to:
+The .pbix file was created on PowerBI Desktop - installation instructions were given. 
+
+The file was then connected to 4 tables:
 
 1. "Orders" fact table imported from an Azure SQL database:
     - The [Card Number] column was deleted to ensure confidentiality
