@@ -121,11 +121,11 @@ The file was then connected to 4 tables:
 
 * A star schema was then created by formulating the following one-to-many relationships between the relevant fact tables and the 'Orders' dimension table:
 
-    Products[Product Code] to Orders[Product Code]
-    Stores[store code] to Orders[Store Code]
-    Customers[User UUID] to Orders[User ID]
-    Dates[Date] to Orders[Order Date]
-    Dates[Date] to Orders[Shipping Date]
+    - Products[Product Code] to Orders[Product Code]
+    - Stores[store code] to Orders[Store Code]
+    - Customers[User UUID] to Orders[User ID]
+    - Dates[Date] to Orders[Order Date]
+    - Dates[Date] to Orders[Shipping Date]
 
 * Then a measures table was created to organise all the measures needed in our report. The DAX formulas needed to create each measure have been included.
 
