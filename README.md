@@ -113,7 +113,7 @@ The file was then connected to 4 tables:
      
   Some examples of the DAX formulas used include:
   
-  - DayOfWeek = WEEKDAY('Date'[Date], 2)
+  - DayOfWeek = ```WEEKDAY('Date'[Date], 2)```
   - MonthName = FORMAT('Date'[Date], "MMMM")
   - Start of Week = 'Date'[Date] - WEEKDAY('Date'[Date], 2) + 1
   - Year = YEAR('Date'[Date])
