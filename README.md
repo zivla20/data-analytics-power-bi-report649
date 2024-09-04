@@ -127,7 +127,7 @@ The file was then connected to 4 tables:
     Dates[Date] to Orders[Order Date]
     Dates[Date] to Orders[Shipping Date]
 
-* Finally, a measures table was created to organise all the measures needed in our report. The DAX formulas needed to create each measure have been included.
+* Then a measures table was created to organise all the measures needed in our report. The DAX formulas needed to create each measure have been included.
 
   The following measures were created at this stage:
   1. Total Orders: Total Orders = COUNT(Orders[ProductCode])
@@ -137,7 +137,21 @@ The file was then connected to 4 tables:
   5. Total Quantity: Total Quantity = SUM(Orders[ProductQuantity])
   6. Profit YTD: Profit YTD = TOTALYTD([Total Profit], 'Date'[Date])
   7. Revenue YTD: Revenue YTD = TOTALYTD([Total Revenue], 'Date'[Date])
- 
+
+ * After this, a calculated column [Geography] was created in the 'Stores' table to generate a full name for each row, based on the region name and the country name. The following DAX formula was used:
+   Geography = Stores[CountryRegion] & ", " & Stores[Country]
+
+   In addition, another calculated column [Country] was created in the same table to show the full name of the Country for each row. The following DAX formula was used:
+   Country = SWITCH(
+    Stores[CountryCode],
+    "GB", "United Kingdom",
+    "US", "United States",
+    "DE", "Germany",
+    BLANK())
+   
+ * Finally, a Geography hierarchy was created in the 'Stores' table with the following structure: Region --> Country --> Country Region
+
+
   
 
 
