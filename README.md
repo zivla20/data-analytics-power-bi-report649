@@ -95,11 +95,9 @@ The file was then connected to 4 tables:
 
 ### Milestone 3:
 
-* A continuous date table was created, starting from the earliest date in the 'Orders'[Order Date] column and ending with the lastest date in the 'Orders'[Shipping Date] column.
-
- The following DAX formula was used: 
- Date = CALENDAR(Min( Orders[OrderDate]), ENDOFYEAR(Orders[ShippingDate]))
-
+* A continuous date table was created, starting from the earliest date in the 'Orders'[Order Date] column and ending with the lastest date in the 'Orders'[Shipping Date] column
+  The following DAX formula was used:
+  Date = CALENDAR(Min( Orders[OrderDate]), ENDOFYEAR(Orders[ShippingDate]))
   The following columns were then created within the date table:
   1. Day of Week
   2. Month Number
@@ -110,13 +108,13 @@ The file was then connected to 4 tables:
   7. Start of Quarter
   8. Start of Month
   9. Start of Week
-
+     
   Some examples of the DAX formulas used:
   DayOfWeek = WEEKDAY('Date'[Date], 2)
   MonthName = FORMAT('Date'[Date], "MMMM")
   Start of Week = 'Date'[Date] - WEEKDAY('Date'[Date], 2) + 1
   Year = YEAR('Date'[Date])
-  
+
   A date hierarchy was then made, from the Start of Year down to the Date.
 
 * A star schema was then created by formulating the following one-to-many relationships between the relevant fact tables and the 'Orders' dimension table:
@@ -130,18 +128,20 @@ The file was then connected to 4 tables:
 * Then a measures table was created to organise all the measures needed in our report. The DAX formulas needed to create each measure have been included.
 
   The following measures were created at this stage:
-  1. Total Orders: Total Orders = COUNT(Orders[ProductCode])
-  2. Total Revenue: Total Revenue = SUMX(Orders, Orders[ProductQuantity] * LOOKUPVALUE(Products[SalePrice], Products[ProductCode], Orders[ProductCode]))
-  3. Total Profit: Total Profit = SUMX(Orders, (RELATED(Products[SalePrice]) - RELATED(Products[CostPrice])) * Orders[ProductQuantity])
-  4. Total Customers: Total Customers = DISTINCTCOUNT(Orders[UserID])
-  5. Total Quantity: Total Quantity = SUM(Orders[ProductQuantity])
-  6. Profit YTD: Profit YTD = TOTALYTD([Total Profit], 'Date'[Date])
-  7. Revenue YTD: Revenue YTD = TOTALYTD([Total Revenue], 'Date'[Date])
+  1. **Total Orders**: Total Orders = COUNT(Orders[ProductCode])
+  2. **Total Revenue**: Total Revenue = SUMX(Orders, Orders[ProductQuantity] * LOOKUPVALUE(Products[SalePrice], Products[ProductCode], Orders[ProductCode]))
+  3. **Total Profit**: Total Profit = SUMX(Orders, (RELATED(Products[SalePrice]) - RELATED(Products[CostPrice])) * Orders[ProductQuantity])
+  4. **Total Customers:** Total Customers = DISTINCTCOUNT(Orders[UserID])
+  5. **Total Quantity:** Total Quantity = SUM(Orders[ProductQuantity])
+  6. **Profit YTD:** Profit YTD = TOTALYTD([Total Profit], 'Date'[Date])
+  7. **Revenue YTD:** Revenue YTD = TOTALYTD([Total Revenue], 'Date'[Date])
 
  * After this, a calculated column [Geography] was created in the 'Stores' table to generate a full name for each row, based on the region name and the country name. The following DAX formula was used:
+
    Geography = Stores[CountryRegion] & ", " & Stores[Country]
 
    In addition, another calculated column [Country] was created in the same table to show the full name of the Country for each row. The following DAX formula was used:
+
    Country = SWITCH(
     Stores[CountryCode],
     "GB", "United Kingdom",
