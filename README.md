@@ -73,7 +73,7 @@ To ensure accessibility for clients without Power BI access, we also extracted i
 
 This project was broken down into Milestones by the AI Core Team. A detailed look at the most important tasks in each milestone will follow:
 
-### Milestone 2
+### Milestone 2:
 
 The .pbix file was created on PowerBI Desktop - installation instructions were given. 
 
@@ -92,3 +92,10 @@ The file was then connected to 4 tables:
 4. "Customers" dimension table by combining 3 .csv files:
     - A [Full Name] column was created by combining together the [First Name] and [Last Name] columns.
     - Columns were renamed using the snakecase format
+
+### Milestone 3:
+
+
+
+
+
