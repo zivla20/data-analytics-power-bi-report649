@@ -120,11 +120,11 @@ The file was then connected to 4 tables:
 
 * A star schema was then created by formulating the following one-to-many relationships between the relevant fact tables and the 'Orders' dimension table:
 
-    - Products[Product Code] to Orders[Product Code]
-    - Stores[store code] to Orders[Store Code]
-    - Customers[User UUID] to Orders[User ID]
-    - Dates[Date] to Orders[Order Date]
-    - Dates[Date] to Orders[Shipping Date]
+    - 'Products'[Product Code] to 'Orders'[Product Code]
+    - 'Stores'[Store code] to 'Orders'[Store Code]
+    - 'Customers'[User UUID] to 'Orders'[User ID]
+    - 'Dates'[Date] to 'Orders'[Order Date]
+    - 'Dates'[Date] to 'Orders'[Shipping Date]
 
 * Then a measures table was created to organise all the measures needed in our report. The DAX formulas needed to create each measure have been included.
 
@@ -156,7 +156,23 @@ Here is a screenshot of the data model that has been created.
 
 ![image](https://github.com/user-attachments/assets/0ef9b8f8-3b8e-4036-bbcd-20b3043bab53)
 
+### Milestone 4:
 
+* 4 report pages were created in the .pbix file.
+
+  1. Executive Summary
+  2. Customer Detail
+  3. Product Detail
+  4. Stores Map
+
+  The 'Temperature' colour theme will be used throughout the report.
+
+* A navigation side bar was added to the left of each report page. This was carried out by inserting a rectangle shape into the first report page, and then duplicating for the other pages.
+
+
+### Milestone 5:
+
+* 
 
   
 
