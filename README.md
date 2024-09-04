@@ -16,6 +16,8 @@ To ensure accessibility for clients without Power BI access, we also extracted i
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [Project Documentation](#project-documentation)
+  - [Milestone 2] (#milestone-2)
+  - 
 
 ## Installation
 
@@ -205,11 +207,29 @@ CALCULATE(
 
 ### Milestone 6:
 
+The focus of this milestone was to create a Executive Summary Page that gives a general overview of the company, allowing C-Suite executives to get insights at a glance.
+
+![image](https://github.com/user-attachments/assets/8c342114-7526-44f6-9b00-1aca2aa93bed)
+
 ### Milestone 7:
+
+The focus of this milestone was to create a Product Detail Page that provides an in-depth look at the profitability of products, with the option to filter by product and region.
+
+![image](https://github.com/user-attachments/assets/4ba5460a-9fda-4209-9921-37df8f36f596)
+
 
 ### Milestone 8:
 
+The focus of this milestone was to create a Stores Map Page that allows store managers to easily check on their stores, in terms of profitability and KPIs.
+
+![image](https://github.com/user-attachments/assets/49ac6c1d-1b27-4c50-9184-be0adf8750ff)
+
 ### Milestone 9:
+
+The aim of this milestone was to fine-tune the cross-highlighting and filtering interactions between different visuals.
+
+The navigation bar was completed through addition of interactive buttons, allowing users to easily flip between report pages.
+
 
 ### Milestone 10:
 
